@@ -1353,7 +1353,7 @@ int ov_raw_seek(OggVorbis_File *vf,ogg_int64_t pos){
 /* rescales the number x from the range of [0,from] to [0,to]
    x is in the range [0,from]
    from, to are in the range [1, 1<<62-1] */
-ogg_int64_t rescale64(ogg_int64_t x, ogg_int64_t from, ogg_int64_t to){
+static ogg_int64_t rescale64(ogg_int64_t x, ogg_int64_t from, ogg_int64_t to){
   ogg_int64_t frac=0;
   ogg_int64_t ret=0;
   int i;

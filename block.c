@@ -22,6 +22,7 @@
 #include "ivorbiscodec.h"
 #include "codec_internal.h"
 
+#include "block.h"
 #include "window.h"
 #include "registry.h"
 #include "misc.h"
